@@ -1,4 +1,4 @@
-* https://developer.android.com/training/basics/firstapp/creating-project
+* https://developer.android.com/training/basics/firstapp/starting-activity
 * https://developer.android.com/courses
 * https://developer.android.com/kotlin
 * https://developer.android.com/docs
