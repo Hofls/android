@@ -1,7 +1,7 @@
 ### Project structure
 * `java/MainActivity.kt` - entry point
 * `res/layout/activity_main.xml` - UI structure
-* `AndroidManifest.xml` - app info (name, permissions, components, etc)
+* `AndroidManifest.xml` - app info (components, permissions, API level)
     * Used by build tools, Android OS ang Google Play
 * `build.gradle` - build info (one file in root + one per module)
 
@@ -20,12 +20,16 @@
     * `` - 
     
 ### Code
+* App components
+    * `Activity` - entry point for interacting with user. Represents single screen with UI (.xml + code)
+        * Examples - Login page, products list, checkout page
+    * `Service` - entry point for keeping an app running in the background (no UI)
+        * Examples - fetch big amount of data over network, play music while user in a different app
+    * `Broadcast receiver` - OS delivers broadcasts even to apps that aren't currently running
+        * Examples - battery is low, screen turned off 
+    * `Content provider` - manages persistent data (e.q. database)
 * `Intent` - represents intent to do something, provides runtime binding between components
     * Example - clicking button in one activity, starts another activity
-* Components
-    * `Activity` - represents a thing user can do, provides UI
-        * Example - Login page (.xml + code)
-    * `WorkManager` - perform background tasks without UI
     
 ### Android studio
 * Don't do stuff manually:
@@ -34,3 +38,7 @@
     * Instead of manually adding Activity class, related xml and line to AndroidManifest.xml
         * Use (Right-click on package -> New -> Activity)
     
+### Android OS
+* Android OS is Linux in which each app is a different user
+    * App files accessible only by one user
+* Each process has its own virtual machine (VM), so an app's code runs in isolation from other apps
