@@ -8,14 +8,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.example.basics.activities.ActivitiesList"
+            android:name=".fragments.FragmentsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.widgets.WidgetsActivity"
+            android:name=".activities.ActivitiesList"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.activities.DisplayMessageActivity"
-            android:parentActivityName="com.example.basics.MainActivity">
+            android:name=".widgets.WidgetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DisplayMessageActivity"
+            android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -23,7 +26,7 @@
                 android:value="com.example.basics.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.basics.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

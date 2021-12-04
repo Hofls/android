@@ -29,6 +29,13 @@
             android:onClick="toActivities"
             android:text="Activities" />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toFragments"
+            android:text="Fragments" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
