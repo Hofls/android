@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.helloworld">
+    package="com.example.basics">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -8,22 +8,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".activities.ActivitiesList"
+            android:name="com.example.basics.activities.ActivitiesList"
             android:exported="false" />
         <activity
-            android:name=".widgets.WidgetsActivity"
+            android:name="com.example.basics.widgets.WidgetsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+            android:name="com.example.basics.activities.DisplayMessageActivity"
+            android:parentActivityName="com.example.basics.MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.example.basics.MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.basics.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

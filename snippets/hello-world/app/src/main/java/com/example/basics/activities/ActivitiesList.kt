@@ -1,12 +1,12 @@
-package com.example.helloworld.activities
+package com.example.basics.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
-import com.example.helloworld.EXTRA_MESSAGE
-import com.example.helloworld.R
+import com.example.basics.EXTRA_MESSAGE
+import com.example.basics.R
 
 class ActivitiesList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
