@@ -1,5 +1,7 @@
 ### Project structure
 * `java/MainActivity.kt` - entry point
+* `src/androidTest` - instrumented tests (run on an Android device)
+* `src/test` - unit tests (without Android device)
 * `res/layout/activity_main.xml` - UI structure
 * `AndroidManifest.xml` - app info (components, permissions, API level)
     * Used by build tools, Android OS ang Google Play
@@ -8,7 +10,7 @@
 ### Layout (Editor)
 * UI in Android is hierarchy of layouts and widgets
     * `Layout` - container, has children and controls their positions
-    * `Widget` - component (e.g. button, text box)
+    * `Widget` - component (e.g. button, text box, toast)
 * Design surface:
     * `Blueprint` - detailed layout (with borders and other invisible elements)
     * `Design` - simplified layout (how user sees it)
@@ -30,6 +32,8 @@
     * `Content provider` - manages persistent data (e.q. database)
 * `Intent` - represents intent to do something, provides runtime binding between components
     * Example - clicking button in one activity, starts another activity
+* `Fragment` - reusable, modular portion of an activity
+    * Examples - activity with two fragments (items list, item detail)
     
 ### Android studio
 * Don't do stuff manually:
@@ -37,6 +41,8 @@
         * Use GUI editor (Design tab)
     * Instead of manually adding Activity class, related xml and line to AndroidManifest.xml
         * Use (Right-click on package -> New -> Activity)
+    * Instead of manually rewriting java code as kotlin 
+        * Try to paste it in studio, it will convert code automatically
     
 ### Android OS
 * Android OS is Linux in which each app is a different user
