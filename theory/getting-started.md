@@ -1,12 +1,7 @@
-* Components
-    * `Activity` - provides UI
-        * Main `Activity` starts on app launch (e.g. tap on icon/notification)
-    * `WorkManager` - perform background tasks without UI
-
 ### Project structure
 * `java/MainActivity.kt` - entry point
 * `res/layout/activity_main.xml` - UI structure
-* `AndroidManifest.xml` - app info (name, permissions, components, etc)
+* `AndroidManifest.xml` - app info (components, permissions, API level)
     * Used by build tools, Android OS ang Google Play
 * `build.gradle` - build info (one file in root + one per module)
 
@@ -19,7 +14,31 @@
     * `Design` - simplified layout (how user sees it)
 * Layouts:
     * `ConstraintLayout` - each element has horizontal/vertical constraints
-        * E.g. Login button 10px below password field, 50px from left side of the screen
+        * Example - Login button 10px below password field, 50px from left side of the screen
     * `LinearLayout` - all elements stack in horizontal/vertical line
-        * E.g. Register -> Login -> Help -> Exit
+        * Example - Register -> Login -> Help -> Exit
     * `` - 
+    
+### Code
+* App components
+    * `Activity` - entry point for interacting with user. Represents single screen with UI (.xml + code)
+        * Examples - Login page, products list, checkout page
+    * `Service` - entry point for keeping an app running in the background (no UI)
+        * Examples - fetch big amount of data over network, play music while user in a different app
+    * `Broadcast receiver` - OS delivers broadcasts even to apps that aren't currently running
+        * Examples - battery is low, screen turned off 
+    * `Content provider` - manages persistent data (e.q. database)
+* `Intent` - represents intent to do something, provides runtime binding between components
+    * Example - clicking button in one activity, starts another activity
+    
+### Android studio
+* Don't do stuff manually:
+    * Instead of manually writing XML for layout
+        * Use GUI editor (Design tab)
+    * Instead of manually adding Activity class, related xml and line to AndroidManifest.xml
+        * Use (Right-click on package -> New -> Activity)
+    
+### Android OS
+* Android OS is Linux in which each app is a different user
+    * App files accessible only by one user
+* Each process has its own virtual machine (VM), so an app's code runs in isolation from other apps
