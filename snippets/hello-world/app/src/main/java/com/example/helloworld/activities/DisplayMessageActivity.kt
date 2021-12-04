@@ -1,8 +1,10 @@
-package com.example.helloworld
+package com.example.helloworld.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.helloworld.EXTRA_MESSAGE
+import com.example.helloworld.R
 
 class DisplayMessageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
