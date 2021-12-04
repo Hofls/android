@@ -33,7 +33,15 @@
 * `Intent` - represents intent to do something, provides runtime binding between components
     * Example - clicking button in one activity, starts another activity
 * `Fragment` - reusable, modular portion of an activity
-    * Examples - activity with two fragments (items list, item detail)
+    * Examples - activity with two fragments (users list, user details)
+    
+### Libraries
+* `Android Jetpack` - collection of libs that follow best practices (with backward compatibility)
+    * `androidx.*` - technical foundation
+    * `WorkManager` - background scheduling
+    * `Room` - data storage persistence
+    * `Navigation` - app navigation flow
+* 
     
 ### Android studio
 * Don't do stuff manually:
@@ -41,6 +49,7 @@
         * Use GUI editor (Design tab)
     * Instead of manually adding Activity class, related xml and line to AndroidManifest.xml
         * Use (Right-click on package -> New -> Activity)
+        * Same goes for fragments, folders, services, etc
     * Instead of manually rewriting java code as kotlin 
         * Try to paste it in studio, it will convert code automatically
     
