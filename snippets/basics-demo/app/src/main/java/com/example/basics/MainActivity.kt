@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ActivitiesList::class.java))
     }
 
+    fun toContainers(view: View) {
+        startActivity(Intent(this, ContainersActivity::class.java))
+    }
+
     fun toFragments(view: View) {
         startActivity(Intent(this, FragmentsActivity::class.java))
     }
