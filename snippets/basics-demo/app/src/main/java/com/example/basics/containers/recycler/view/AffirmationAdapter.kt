@@ -10,29 +10,26 @@ import com.example.basics.R
 
 class AffirmationAdapter(
     private val context: Context,
-    private val dataset: List<Affirmation>
+    private val dataset: List<AffirmationRepository.Affirmation>
 ) : RecyclerView.Adapter<AffirmationAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
     }
 
+    /** .xml layout */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        // create a new view
         val adapterLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_item, parent, false)
-
+            .inflate(R.layout.affirmation_list_item, parent, false)
         return ItemViewHolder(adapterLayout)
     }
 
-
+    /** fill UI with data */
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text =  context.resources.getString(item.stringResourceId)
+        holder.textView.text = item.message
     }
 
-
     override fun getItemCount() = dataset.size
-
 
 }

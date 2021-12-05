@@ -2,7 +2,4 @@
     <string name="app_name">My Application</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
-    <string name="affirmation1">Text A</string>
-    <string name="affirmation2">Text B</string>
-    <string name="affirmation3">Text C</string>
 </resources>
