@@ -1,4 +1,4 @@
-package com.example.basics.fragments
+package com.example.basics.containers.fragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

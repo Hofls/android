@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.basics.activities.ActivitiesList
 import com.example.basics.containers.ContainersActivity
-import com.example.basics.fragments.FragmentsActivity
+import com.example.basics.containers.fragments.FragmentsActivity
 import com.example.basics.widgets.WidgetsActivity
 
 const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
@@ -23,10 +23,6 @@ class MainActivity : AppCompatActivity() {
 
     fun toContainers(view: View) {
         startActivity(Intent(this, ContainersActivity::class.java))
-    }
-
-    fun toFragments(view: View) {
-        startActivity(Intent(this, FragmentsActivity::class.java))
     }
 
     fun toWidgets(view: View) {

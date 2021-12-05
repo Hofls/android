@@ -8,10 +8,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".containers.ScrollViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".containers.ContainersActivity"
             android:exported="false" />
         <activity
-            android:name=".fragments.FragmentsActivity"
+            android:name="com.example.basics.containers.fragments.FragmentsActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ActivitiesList"
