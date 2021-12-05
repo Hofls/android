@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.basics.activities.ActivitiesList
+import com.example.basics.containers.ContainersActivity
 import com.example.basics.fragments.FragmentsActivity
 import com.example.basics.widgets.WidgetsActivity
 
