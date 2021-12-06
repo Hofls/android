@@ -24,5 +24,8 @@ class ActivitiesList : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun toLifecycle(view: View) {
+        startActivity(Intent(this, LifecycleDemoActivity::class.java))
+    }
 
 }
