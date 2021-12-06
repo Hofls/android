@@ -19,7 +19,11 @@
         * Example - Login button 10px below password field, 50px from left side of the screen
     * `LinearLayout` - all elements stack in horizontal/vertical line
         * Example - Register -> Login -> Help -> Exit
-    * `` - 
+    * `FrameLayout` - contains one element that takes all the space
+* Containers:
+    * `ScrollView` - adds scrolling layout within it
+    * `RecyclerView` - same as `ScrollView`, but optimized to display large sets of data
+        * Example - when user scrolls long list, RecyclerView reuses same elements to display new content
     
 ### Code
 * App components
@@ -34,6 +38,14 @@
     * Example - clicking button in one activity, starts another activity
 * `Fragment` - reusable, modular portion of an activity
     * Examples - activity with two fragments (users list, user details)
+* `Activity Lifecycle`
+    * Main stages:
+        * `Created` - invisible, but ready to go (e.g. user switched to another app)
+        * `Started` - visible (e.g. user focus is in "share" dialog)
+        * `Resumed` - visible and has focus
+    * Cycles:
+        * Creation: `Initialized` - onCreate() - `Created` - onStart()/onRestart() - `Started` - onResume() - `Resumed`
+        * Destruction: `Resumed` - onPause() - `Started` - onStop() - `Created` - onDestroy() - `Destroyed`
     
 ### Libraries
 * `Android Jetpack` - collection of libs that follow best practices (with backward compatibility)
@@ -57,3 +69,7 @@
 * Android OS is Linux in which each app is a different user
     * App files accessible only by one user
 * Each process has its own virtual machine (VM), so an app's code runs in isolation from other apps
+
+### Etc
+* `Inflate` - build View objects from XML file
+    * Most of the time done implicitly (by OS), can be done explicitly (using `LayoutInflater`)
