@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.basics">
+    package="com.example.basics" >
 
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.MyApplication" >
         <activity
-            android:name=".fragments.FragmentsActivity"
+            android:name=".containers.recycler.view.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".containers.ScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".containers.ContainersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".containers.fragments.FragmentsActivity"
             android:exported="false" />
         <activity
             android:name=".activities.ActivitiesList"
@@ -18,7 +27,7 @@
             android:exported="false" />
         <activity
             android:name=".activities.DisplayMessageActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity" >
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -27,7 +36,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
