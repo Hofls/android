@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun getAllUsers(view: View) {
+    fun addUser(view: View) {
         // todo - replace with coroutine
         Thread {
             val db = Room.databaseBuilder(
