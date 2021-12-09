@@ -1,4 +1,4 @@
-package com.example.basics.activities
+package com.example.basics.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

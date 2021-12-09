@@ -1,4 +1,4 @@
-package com.example.basics.widgets
+package com.example.basics.ui.widgets
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,12 +1,12 @@
-package com.example.basics.containers
+package com.example.basics.ui.containers
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.basics.R
-import com.example.basics.containers.fragments.FragmentsActivity
-import com.example.basics.containers.recycler.view.RecyclerViewActivity
+import com.example.basics.ui.containers.fragments.FragmentsActivity
+import com.example.basics.ui.containers.recycler.view.RecyclerViewActivity
 
 class ContainersActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

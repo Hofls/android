@@ -1,4 +1,4 @@
-package com.example.basics.containers.recycler.view
+package com.example.basics.ui.containers.recycler.view
 
 import android.content.Context
 import android.view.LayoutInflater

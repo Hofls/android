@@ -1,8 +1,7 @@
-package com.example.basics.activities
+package com.example.basics.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import com.example.basics.R
 

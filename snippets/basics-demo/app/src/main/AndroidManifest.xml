@@ -8,28 +8,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".activities.LifecycleDemoActivity"
+            android:name="com.example.basics.ui.activities.LifecycleDemoActivity"
             android:exported="false" />
         <activity
-            android:name=".containers.recycler.view.RecyclerViewActivity"
+            android:name="com.example.basics.ui.containers.recycler.view.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".containers.ScrollViewActivity"
+            android:name="com.example.basics.ui.containers.ScrollViewActivity"
             android:exported="false" />
         <activity
-            android:name=".containers.ContainersActivity"
+            android:name="com.example.basics.ui.containers.ContainersActivity"
             android:exported="false" />
         <activity
-            android:name=".containers.fragments.FragmentsActivity"
+            android:name="com.example.basics.ui.containers.fragments.FragmentsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ActivitiesList"
+            android:name="com.example.basics.ui.activities.ActivitiesList"
             android:exported="false" />
         <activity
-            android:name=".widgets.WidgetsActivity"
+            android:name="com.example.basics.ui.widgets.WidgetsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.DisplayMessageActivity"
+            android:name="com.example.basics.ui.activities.DisplayMessageActivity"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

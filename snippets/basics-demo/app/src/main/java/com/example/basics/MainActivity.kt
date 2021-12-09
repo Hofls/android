@@ -4,10 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.basics.activities.ActivitiesList
-import com.example.basics.containers.ContainersActivity
-import com.example.basics.containers.fragments.FragmentsActivity
-import com.example.basics.widgets.WidgetsActivity
+import com.example.basics.ui.activities.ActivitiesList
+import com.example.basics.ui.containers.ContainersActivity
+import com.example.basics.ui.widgets.WidgetsActivity
 
 const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
 
