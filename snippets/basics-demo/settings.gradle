@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 rootProject.name = "My Application"
 include ':ui'
 include ':minimal-template'
+include ':storage'
