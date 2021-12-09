@@ -1,6 +1,4 @@
 * https://developer.android.com/courses
-    * https://developer.android.com/courses/android-basics-kotlin/course
-        * TODO - Unit 6
     * TODO - Intermediate, Advanced
 * https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012
     * https://developer.android.com/guide (look at lower part of the page)
