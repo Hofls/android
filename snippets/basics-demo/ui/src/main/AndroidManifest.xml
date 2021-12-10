@@ -8,28 +8,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.example.basics.ui.activities.LifecycleDemoActivity"
+            android:name=".ui.jetpack.compose.ComposeActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.activities.LifecycleDemoActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.containers.recycler.view.RecyclerViewActivity"
+            android:name=".ui.containers.recycler.view.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.containers.ScrollViewActivity"
+            android:name=".ui.containers.ScrollViewActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.containers.ContainersActivity"
+            android:name=".ui.containers.ContainersActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.containers.fragments.FragmentsActivity"
+            android:name=".ui.containers.fragments.FragmentsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.activities.ActivitiesList"
+            android:name=".ui.activities.ActivitiesList"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.widgets.WidgetsActivity"
+            android:name=".ui.widgets.WidgetsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.basics.ui.activities.DisplayMessageActivity"
+            android:name=".ui.activities.DisplayMessageActivity"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

@@ -36,6 +36,13 @@
             android:onClick="toWidgets"
             android:text="Widgets" />
 
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toCompose"
+            android:text="Compose" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
