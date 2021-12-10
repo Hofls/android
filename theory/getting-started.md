@@ -38,7 +38,7 @@
     * Example - clicking button in one activity, starts another activity
 * `Fragment` - reusable, modular portion of an activity
     * Examples - activity with two fragments (users list, user details)
-* `Activity Lifecycle`
+* `Activity/Fragment Lifecycle`
     * Main stages:
         * `Created` - invisible, but ready to go (e.g. user switched to another app)
         * `Started` - visible (e.g. user focus is in "share" dialog)
@@ -50,10 +50,10 @@
 ### Libraries
 * `Android Jetpack` - collection of libs that follow best practices (with backward compatibility)
     * `androidx.*` - technical foundation
-    * `WorkManager` - background scheduling
+    * `WorkManager` - schedules and executes code in background (even if app not running)
     * `Room` - data storage persistence
     * `Navigation` - app navigation flow
-* 
+* `Retrofit` - http client (built on top of okhttp)
     
 ### Android studio
 * Don't do stuff manually:
@@ -64,6 +64,11 @@
         * Same goes for fragments, folders, services, etc
     * Instead of manually rewriting java code as kotlin 
         * Try to paste it in studio, it will convert code automatically
+* App Inspection:
+    * Provides information about running app:
+    * `Layout Inspector` - check component tree (Activity)
+    * `Database Inspector` - look at tables (Room)
+    * `Background Task Inspector` - check WorkRequest status (WorkManager)
     
 ### Android OS
 * Android OS is Linux in which each app is a different user
