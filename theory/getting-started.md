@@ -53,6 +53,7 @@
     * `WorkManager` - schedules and executes code in background (even if app not running)
     * `Room` - data storage persistence
     * `Navigation` - app navigation flow
+    * `Compose` - declarative functions for UI building (modern alternative to XML and Layout Editor)
 * `Retrofit` - http client (built on top of okhttp)
     
 ### Android studio
