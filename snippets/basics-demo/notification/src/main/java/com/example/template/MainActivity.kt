@@ -7,6 +7,8 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +33,12 @@ class MainActivity : AppCompatActivity() {
             .setContentTitle("Hello!")
             .setContentText("It's time to learn")
             .build()
-        manager.notify(2323, notification)
+        manager.notify(createID(), notification)
+    }
+
+    fun createID(): Int {
+        val now = Date()
+        return SimpleDateFormat("ddHHmmss", Locale.US).format(now).toInt()
     }
 
 
