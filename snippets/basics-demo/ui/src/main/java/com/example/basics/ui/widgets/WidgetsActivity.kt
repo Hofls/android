@@ -21,4 +21,8 @@ class WidgetsActivity : AppCompatActivity() {
     fun toMenu(view: View) {
         startActivity(Intent(this, MenuActivity::class.java))
     }
+
+    fun showAlert(view: View) {
+        AlertWidget.showAlert(this)
+    }
 }

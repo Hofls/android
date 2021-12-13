@@ -28,5 +28,12 @@
             android:layout_height="wrap_content"
             android:onClick="toMenu"
             android:text="Menu" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showAlert"
+            android:text="Alert" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
