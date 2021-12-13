@@ -1,20 +1,9 @@
 package com.example.basics.ui.widgets
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import android.app.DatePickerDialog
-
-import android.widget.DatePicker
-
-import android.R
-import android.app.DatePickerDialog.OnDateSetListener
-
-import android.widget.EditText
-import java.text.SimpleDateFormat
-import java.util.*
+import androidx.appcompat.app.AppCompatActivity
 
 
 class WidgetsActivity : AppCompatActivity() {
@@ -28,7 +17,7 @@ class WidgetsActivity : AppCompatActivity() {
     }
 
     fun toMenu(view: View) {
-        startActivity(Intent(this, MenuActivity::class.java))
+        MenuWidget.showPopup(this, view)
     }
 
     fun showAlert(view: View) {
