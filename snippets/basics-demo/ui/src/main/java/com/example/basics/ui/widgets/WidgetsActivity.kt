@@ -36,29 +36,7 @@ class WidgetsActivity : AppCompatActivity() {
     }
 
     fun pickDate(view: View) {
-        val calendar: Calendar = Calendar.getInstance()
-
-        val dateField = findViewById<EditText>(com.example.basics.R.id.DateField)
-        val dateFormat = "dd-MM-yyyy"
-        if (!dateField.text.toString().isNullOrBlank()) {
-            val sdf = SimpleDateFormat(dateFormat, Locale.ENGLISH)
-            calendar.setTime(sdf.parse(dateField.text.toString()))
-        }
-        val date =
-            OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
-                calendar.set(Calendar.YEAR, year)
-                calendar.set(Calendar.MONTH, monthOfYear)
-                calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-
-
-                val sdf = SimpleDateFormat(dateFormat, Locale.UK)
-                dateField.setText(sdf.format(calendar.getTime()))
-            }
-
-        DatePickerDialog(
-            this@WidgetsActivity, date, calendar
-                .get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)
-        ).show()
+        DatePickerWidget.pickDate(this)
     }
 
 }
