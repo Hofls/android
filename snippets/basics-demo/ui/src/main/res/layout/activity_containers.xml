@@ -35,6 +35,13 @@
             android:layout_height="wrap_content"
             android:onClick="toScrollView"
             android:text="Scroll View" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toSwipeRefreshView"
+            android:text="Swipe Refresh" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

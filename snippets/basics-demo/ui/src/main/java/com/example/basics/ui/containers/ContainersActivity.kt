@@ -26,5 +26,9 @@ class ContainersActivity : AppCompatActivity() {
         startActivity(Intent(this, ScrollViewActivity::class.java))
     }
 
+    fun toSwipeRefreshView(view: View) {
+        startActivity(Intent(this, SwipeRefreshActivity::class.java))
+    }
+
 
 }
