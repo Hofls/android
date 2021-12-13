@@ -8,8 +8,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ui.containers.SwipeRefreshActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.jetpack.compose.ComposeActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.activities.LifecycleDemoActivity"
             android:exported="false" />
