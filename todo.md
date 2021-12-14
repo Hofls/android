@@ -1,8 +1,5 @@
 * training
     * etc
-        * https://developer.android.com/guide/topics/ui/menus
-        * https://developer.android.com/codelabs/android-training-menus-and-pickers?index=..%2F..%2Fandroid-training#0
-            * Dialog, picker
         * https://developer.android.com/codelabs/android-training-input-controls?index=..%2F..%2Fandroid-training#0
     * Dependency injection (Hilt)
     * https://developer.android.com/training/animation/overview?hl=en

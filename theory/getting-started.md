@@ -27,10 +27,12 @@
     
 ### Code
 * App components
-    * `Activity` - entry point for interacting with user. Represents single screen with UI (.xml + code)
-        * Examples - Login page, products list, checkout page
-    * `Service` - entry point for keeping an app running in the background (no UI)
-        * Examples - fetch big amount of data over network, play music while user in a different app
+    * `View` - basic building block for UI components (parent class for widgets)
+    * `Context` - information about an application environment (parent class) 
+        * `Activity` - entry point for interacting with user. Represents single screen with UI (.xml + code)
+            * Examples - Login page, products list, checkout page
+        * `Service` - entry point for keeping an app running in the background (no UI)
+            * Examples - fetch big amount of data over network, play music while user in a different app
     * `Broadcast receiver` - OS delivers broadcasts even to apps that aren't currently running
         * Examples - battery is low, screen turned off 
     * `Content provider` - manages persistent data (e.q. database)
