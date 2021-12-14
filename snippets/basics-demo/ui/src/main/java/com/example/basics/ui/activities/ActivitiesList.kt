@@ -32,5 +32,9 @@ class ActivitiesList : AppCompatActivity() {
         startActivity(Intent(this, SettingsActivity::class.java))
     }
 
+    fun toCompose(view: View) {
+        startActivity(Intent(this, ComposeActivity::class.java))
+    }
+
 
 }

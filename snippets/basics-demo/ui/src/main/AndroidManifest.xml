@@ -15,7 +15,7 @@
             android:name=".ui.containers.SwipeRefreshActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.jetpack.compose.ComposeActivity"
+            android:name=".ui.activities.ComposeActivity"
             android:exported="false" />
         <activity
             android:name=".ui.activities.LifecycleDemoActivity"

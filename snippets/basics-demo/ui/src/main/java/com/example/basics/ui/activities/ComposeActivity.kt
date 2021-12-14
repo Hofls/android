@@ -1,4 +1,4 @@
-package com.example.basics.ui.jetpack.compose
+package com.example.basics.ui.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
