@@ -42,6 +42,13 @@
             android:layout_height="wrap_content"
             android:onClick="toSwipeRefreshView"
             android:text="Swipe Refresh" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toCardView"
+            android:text="Card View" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

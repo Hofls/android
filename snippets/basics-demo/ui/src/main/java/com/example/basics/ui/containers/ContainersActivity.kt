@@ -30,5 +30,8 @@ class ContainersActivity : AppCompatActivity() {
         startActivity(Intent(this, SwipeRefreshActivity::class.java))
     }
 
+    fun toCardView(view: View) {
+        startActivity(Intent(this, CardViewActivity::class.java))
+    }
 
 }
