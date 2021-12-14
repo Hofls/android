@@ -15,6 +15,7 @@ class CardViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_card_view)
     }
 
+    /** Dynamically adds a card */
     fun inflateCardView(view: View) {
         val container = findViewById<LinearLayout>(R.id.cardViewContainer)
         var inflater = applicationContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater

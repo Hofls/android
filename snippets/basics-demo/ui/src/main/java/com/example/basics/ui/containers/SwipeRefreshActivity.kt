@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
 import android.util.Log
+import android.widget.Toast
 
 /** Swipe down and look at the logs */
 class SwipeRefreshActivity : AppCompatActivity() {
@@ -15,7 +16,7 @@ class SwipeRefreshActivity : AppCompatActivity() {
 
         val pullToRefresh = findViewById<SwipeRefreshLayout>(com.example.basics.R.id.pullToRefresh)
         pullToRefresh.setOnRefreshListener {
-            Log.i("TAG", "onRefresh")
+            Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show()
             pullToRefresh.isRefreshing = false
         }
     }
