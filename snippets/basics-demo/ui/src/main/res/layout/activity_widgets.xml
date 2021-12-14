@@ -28,5 +28,25 @@
             android:layout_height="wrap_content"
             android:onClick="toMenu"
             android:text="Menu" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showAlert"
+            android:text="Alert" />
+
+        <EditText
+            android:id="@+id/DateField"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:onClick="pickDate"
+            android:text="" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

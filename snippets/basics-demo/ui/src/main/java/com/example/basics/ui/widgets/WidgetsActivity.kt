@@ -1,17 +1,15 @@
 package com.example.basics.ui.widgets
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.basics.R
-import com.example.basics.ui.containers.ContainersActivity
+import androidx.appcompat.app.AppCompatActivity
+
 
 class WidgetsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_widgets)
+        setContentView(com.example.basics.R.layout.activity_widgets)
     }
 
     fun showToast(view: View) {
@@ -19,6 +17,15 @@ class WidgetsActivity : AppCompatActivity() {
     }
 
     fun toMenu(view: View) {
-        startActivity(Intent(this, MenuActivity::class.java))
+        MenuWidget.showPopup(this, view)
     }
+
+    fun showAlert(view: View) {
+        AlertWidget.showAlert(this)
+    }
+
+    fun pickDate(view: View) {
+        DatePickerWidget.pickDate(this)
+    }
+
 }
