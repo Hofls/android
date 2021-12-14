@@ -3,6 +3,7 @@ package com.example.basics.ui.widgets
 import android.app.AlertDialog
 import android.content.Context
 import android.util.Log
+import android.widget.Toast
 
 
 class AlertWidget {
@@ -13,10 +14,10 @@ class AlertWidget {
                 .setTitle("Delete entry")
                 .setMessage("Are you sure? Deletion is permanent.")
                 .setPositiveButton(android.R.string.ok) { dialog, which ->
-                    Log.i("TAG", "OK")
+                    Toast.makeText(context, "OK", Toast.LENGTH_SHORT).show()
                 }
                 .setNegativeButton(android.R.string.cancel) { dialog, which ->
-                    Log.i("TAG", "CANCEL")
+                    Toast.makeText(context, "CANCEL", Toast.LENGTH_SHORT).show()
                 }
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show()
