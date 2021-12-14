@@ -8,6 +8,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ui.containers.CardViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />
@@ -15,7 +18,7 @@
             android:name=".ui.containers.SwipeRefreshActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.jetpack.compose.ComposeActivity"
+            android:name=".ui.activities.ComposeActivity"
             android:exported="false" />
         <activity
             android:name=".ui.activities.LifecycleDemoActivity"
