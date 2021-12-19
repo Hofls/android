@@ -1,11 +1,18 @@
 ### Project structure
 * `java/MainActivity.kt` - entry point
-* `src/androidTest` - instrumented tests (run on an Android device)
-* `src/test` - unit tests (without Android device)
-* `res/layout/activity_main.xml` - UI structure
 * `AndroidManifest.xml` - app info (components, permissions, API level)
     * Used by build tools, Android OS ang Google Play
 * `build.gradle` - build info (one file in root + one per module)
+* `src/androidTest` - instrumented tests (run on an Android device)
+* `src/test` - unit tests (without Android device)
+* Resources:
+    * `res/layout/` - UI structure
+    * `res/drawable` - images
+    * `res/mipmap` - launcher icons
+    * `res/values` - strings, colors, arrays, styles
+    * `res/xml` - arbitrary XML files (not UI)
+    * `res/animator` - XML files that define animations
+    * `res/fonts` - .ttf, .otf, .ttc
 
 ### Layout (Editor)
 * UI in Android is hierarchy of layouts and widgets
