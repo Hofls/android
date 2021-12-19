@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import com.example.template.databinding.ActivityMainBinding
 
+/** Replacement for findViewById */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
