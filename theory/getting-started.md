@@ -55,6 +55,15 @@
     * Cycles:
         * Creation: `Initialized` - onCreate() - `Created` - onStart()/onRestart() - `Started` - onResume() - `Resumed`
         * Destruction: `Resumed` - onPause() - `Started` - onStop() - `Created` - onDestroy() - `Destroyed`
+        
+### Architecture
+* Layers:
+    * `UI Layer`- display the application data on the screen
+        * `UI elements` - render data on the screen (View / Jetpack Compose)
+        * `Sate holders` - hold data, expose it to the UI, handle logic
+    * `Domain Layer (Optional)` - business logic (UseCase)
+        * Reusable code, calls to different repositories
+    * `Data Layer` - business logic (Repository, Model, Data Source)
     
 ### Libraries
 * `Android Jetpack` - collection of libs that follow best practices (with backward compatibility)
