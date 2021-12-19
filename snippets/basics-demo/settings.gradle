@@ -9,7 +9,7 @@ dependencyResolutionManagement {
 rootProject.name = "Basics demo"
 include ':ui'
 include ':minimal-template'
-include ':storage'
+include ':storage:room'
 include ':background-work'
 include ':notification'
 include ':permissions'
