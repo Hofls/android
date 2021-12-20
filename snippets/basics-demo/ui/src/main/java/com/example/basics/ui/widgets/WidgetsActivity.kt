@@ -33,5 +33,7 @@ class WidgetsActivity : AppCompatActivity() {
         startActivity(Intent(this, FloatingButtonActivity::class.java))
     }
 
-
+    fun toStylishButton(view: View) {
+        startActivity(Intent(this, StylishButtonActivity::class.java))
+    }
 }

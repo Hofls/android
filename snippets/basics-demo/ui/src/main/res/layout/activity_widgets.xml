@@ -55,5 +55,12 @@
             android:layout_height="wrap_content"
             android:onClick="toFloatingButton"
             android:text="Floating button" />
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toStylishButton"
+            android:text="Stylish Button" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
