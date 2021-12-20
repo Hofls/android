@@ -1,6 +1,8 @@
 package com.example.basics.ui.activities
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -36,5 +38,16 @@ class ActivitiesList : AppCompatActivity() {
         startActivity(Intent(this, ComposeActivity::class.java))
     }
 
+    fun toAnotherApp1(view: View) {
+        val location = Uri.parse("geo:0,0?q=1600+Amphitheatre+Parkway,+Mountain+View,+California")
+        val mapIntent = Intent(Intent.ACTION_VIEW, location)
+        startActivity(mapIntent)
+    }
+
+    fun toAnotherApp2(view: View) {
+        val location = Uri.parse("tel:5551234")
+        val mapIntent = Intent(Intent.ACTION_DIAL, location)
+        startActivity(mapIntent)
+    }
 
 }
