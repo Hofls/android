@@ -36,4 +36,9 @@ class WidgetsActivity : AppCompatActivity() {
     fun toStylishButton(view: View) {
         startActivity(Intent(this, StylishButtonActivity::class.java))
     }
+
+    fun toSpinner(view: View) {
+        startActivity(Intent(this, SpinnerActivity::class.java))
+    }
+
 }
