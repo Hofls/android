@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.basics.ui.activities.ActivitiesList
 import com.example.basics.ui.containers.ContainersActivity
+import com.example.basics.ui.motion.MotionActivity
 import com.example.basics.ui.widgets.WidgetsActivity
 
 const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
@@ -26,6 +27,10 @@ class MainActivity : AppCompatActivity() {
 
     fun toWidgets(view: View) {
         startActivity(Intent(this, WidgetsActivity::class.java))
+    }
+
+    fun toMotion(view: View) {
+        startActivity(Intent(this, MotionActivity::class.java))
     }
 
 }
