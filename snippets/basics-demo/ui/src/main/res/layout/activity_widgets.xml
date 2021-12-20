@@ -48,5 +48,12 @@
             android:inputType="textPersonName"
             android:onClick="pickDate"
             android:text="" />
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toFloatingButton"
+            android:text="Floating button" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
