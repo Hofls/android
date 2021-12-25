@@ -9,8 +9,6 @@ import com.example.basics.ui.containers.ContainersActivity
 import com.example.basics.ui.motion.MotionActivity
 import com.example.basics.ui.widgets.WidgetsActivity
 
-const val EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE"
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
