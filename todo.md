@@ -1,5 +1,5 @@
 * https://developer.android.com/guide
-    * https://developer.android.com/training/app-links
+    * https://developer.android.com/guide/user-data
 * https://codelabs.developers.google.com/?cat=android
 * https://developer.android.com/studio/intro
 	* https://developer.android.com/studio/debug/apk-analyzer
@@ -12,7 +12,6 @@
     * https://developer.android.com/courses/android-basics-kotlin/unit-3
     * https://developer.android.com/jetpack/androidx/releases/benchmark
     * progress indicator (loader)
-    * app bar
     * android drawer
     * android endless scrolling
     * ComposeActivity - add elements dynamically (onClick)

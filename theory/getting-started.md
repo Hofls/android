@@ -32,14 +32,16 @@
     * `RecyclerView` - same as `ScrollView`, but optimized to display large sets of data
         * Example - when user scrolls long list, RecyclerView reuses same elements to display new content
     
-### Code
+### Modules
 * App components
     * `View` - basic building block for UI components (parent class for widgets)
     * `Context` - information about an application environment (parent class) 
         * `Activity` - entry point for interacting with user. Represents single screen with UI (.xml + code)
             * Examples - Login page, products list, checkout page
         * `Service` - entry point for keeping an app running in the background (no UI)
-            * Examples - fetch big amount of data over network, play music while user in a different app
+            * `Foreground` - shows status bar notification (play music while user in a different app)
+            * `Background` - isn't directly noticed by the user (fetch big amount of data over network) 
+            * `Bound` - when an application component binds to it
     * `Broadcast receiver` - OS delivers broadcasts even to apps that aren't currently running
         * Examples - battery is low, screen turned off 
     * `Content provider` - manages persistent data (e.q. database)
@@ -47,6 +49,11 @@
     * Example - clicking button in one activity, starts another activity
 * `Fragment` - reusable, modular portion of an activity
     * Examples - activity with two fragments (users list, user details)
+* Storage
+    * `App-specific` - Files meant for your app's use only (getFilesDir)
+    * `Shared storage` - Files meant for any app (Storage Access Framework)
+    * `Preferences` - Private, primitive data in key-value pairs (Jetpack Preferences)
+    * `Databases` - Private, structured data (Room)
 * `Activity/Fragment Lifecycle`
     * Main stages:
         * `Created` - invisible, but ready to go (e.g. user switched to another app)
@@ -72,6 +79,7 @@
     * `Room` - data storage persistence
     * `Navigation` - app navigation flow
     * `Compose` - declarative functions for UI building (modern alternative to XML and Layout Editor)
+    * `Preferences` - key-value storage
 * `Retrofit` - http client (built on top of okhttp)
     
 ### Android studio
@@ -83,11 +91,10 @@
         * Same goes for fragments, folders, services, etc
     * Instead of manually rewriting java code as kotlin 
         * Try to paste it in studio, it will convert code automatically
-* App Inspection:
-    * Provides information about running app:
-    * `Layout Inspector` - check component tree (Activity)
-    * `Database Inspector` - look at tables (Room)
+* `App Inspection`:
+    * `Database Inspector` - look at DB tables (Room)
     * `Background Task Inspector` - check WorkRequest status (WorkManager)
+* `Layout Inspector` - check component tree (Activity)
     
 ### Android OS
 * Android OS is Linux in which each app is a different user
