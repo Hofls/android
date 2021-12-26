@@ -8,6 +8,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ui.widgets.SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.widgets.StylishButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.widgets.FloatingButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.motion.HorizontalMotionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.motion.MotionActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.containers.CardViewActivity"
             android:exported="false" />
         <activity
